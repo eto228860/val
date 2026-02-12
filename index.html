@@ -169,7 +169,7 @@
         h.style.left = Math.random()*100+'vw';
         h.style.animationDuration = (6 + Math.random()*6) + 's';
         h.style.animationDelay = (Math.random()*4) + 's';
-        h.style.transform = translateY(${100+Math.random()*30}vh) rotate(45deg);
+        h.style.transform = `translateY(${100+Math.random()*30}vh) rotate(45deg)`;
         h.style.opacity = (0.3 + Math.random()*0.7);
         document.body.appendChild(h);
       }
@@ -243,9 +243,9 @@
         const c = document.createElement("div");
         c.className = "confetti";
         c.style.left = Math.random()*100 + "vw";
-        c.style.background = hsl(${Math.random()*360}, 85%, 65%);
+        c.style.background = `hsl(${Math.random()*360}, 85%, 65%)`;
         c.style.animationDuration = (1 + Math.random()*1.2) + "s";
-        c.style.transform = translateY(-20px) rotate(${Math.random()*120}deg);
+        c.style.transform = `translateY(-20px) rotate(${Math.random()*120}deg)`;
         document.body.appendChild(c);
         setTimeout(()=>c.remove(), 2200);
       }
